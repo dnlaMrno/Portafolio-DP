@@ -38,6 +38,7 @@ projects.forEach(project => {
     <img src="Assets/${project.image}" alt="proyecto">
         <div class="content">
             <h3 class="project-name">${project.name}</h3>
+            <a href="https://github.com/dnlaMrno" target="_blank" class="btn">${project.link}</a>
             <span class="tags">${project.tags}</span>
         </div>
         </div>

@@ -324,6 +324,11 @@ body {
     grid-gap: 20px;
 }
 
+.project-container .btn {
+    position: absolute;
+    margin-top: 50%;
+}
+
 .project-card {
     position: relative;
     cursor: pointer;
@@ -352,7 +357,7 @@ body {
 }
 
 .project-name {
-    font-size: 2rem;
+    font-size: 1.5rem;
     text-align: center;
 }
 
@@ -491,6 +496,11 @@ body {
     .project-container {
         grid-template-columns: repeat(2, 1fr);
     }
+
+    .project-name {
+        font-size: 3rem;
+    }
+
 
     .skills-card {
         grid-column: 1 span !important;
