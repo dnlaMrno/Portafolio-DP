@@ -20,7 +20,7 @@ let projects = [
     image: 'proyecto 04.jpg',
 },
 {
-    name:'Nursing Care',
+    name:'Medical Service',
     tags:'#all, #html-css, #javaScript, #node.Js', 
     image: 'proyecto 05.jpg',
 },
