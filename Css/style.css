@@ -1,0 +1,382 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100%;
+    position: relative;
+    background: #1d1d1d;
+    color: #fff;
+    font-family: 'Roboto Mono', monospace;
+}
+
+/*-------- Menú --------*/
+.navBar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background: #1d1d1d;
+    padding: 0 10vw;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    z-index: 9;
+}
+
+.brand {
+    color: #26C6DA;
+    margin-top: 2%;
+    text-transform: capitalize;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.links-container {
+    margin-top: 2%;
+    display: flex;
+    list-style: none;
+}
+
+.link {
+    text-transform: capitalize;
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    padding: 10px;
+    position: relative;
+}
+
+.link:hover:not(:active) {
+    opacity: 0.7;
+}
+
+.link.active::before,
+.separator::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: #fff;
+}
+
+.link.active::after,
+.separator::after {
+    content: '';
+    position: absolute;
+    bottom: 2px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: #fff;
+}
+
+/*--------- Inicio ---------*/
+.typewriter-effect {
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.typewriter-effect>.text {
+    max-width: 0;
+    animation: typing 5s steps(var(--characters)) infinite;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.typewriter-effect:after {
+    content: " |";
+    animation: blink 1s infinite;
+    animation-timing-function: step-end;
+}
+
+@keyframes typing {
+
+    75%,
+    100% {
+        max-width: calc(var(--characters) * 1ch);
+    }
+}
+
+@keyframes blink {
+
+    0%,
+    75%,
+    100% {
+        opacity: 1;
+    }
+
+    25% {
+        opacity: 0;
+    }
+}
+
+.home {
+    width: 100%;
+    min-height: calc(100vh - 60px);
+    height: auto;
+    margin-top: 60px;
+    padding: 0 10vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.hero-content {
+    width: 60%;
+}
+
+.profession {
+    width: fit-content;
+    display: block;
+    margin: 10px 0 20px;
+    margin-left: auto;
+    text-transform: capitalize;
+    position: relative;
+    padding: 10px 20px;
+    color: #1d1d1d;
+    z-index: 2;
+}
+
+.profession::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #e3e3e3;
+    z-index: -1;
+    transform: skewX(10deg);
+}
+
+.profession::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100px;
+    width: 100px;
+    height: 2px;
+    background: #e3e3e3;
+}
+
+.info {
+    line-height: 30px;
+    margin-bottom: 50px;
+}
+
+.btn {
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 50px;
+    background: #26C6DA;
+    color: #fff;
+    text-transform: capitalize;
+    border: none;
+}
+
+.btn:hover {
+    background: #9C27B0;
+}
+
+/*----------- Acerca de mí -----------*/
+.highLight {
+    color: #26C6DA;
+}
+
+.about {
+    width: 100%;
+    height: auto;
+    padding: 50px 10vw;
+}
+
+.heading {
+    text-align: center;
+    font-size: 3.5rem;
+}
+
+.sub-heading {
+    text-align: center;
+    font-size: 1rem;
+    margin: 10px;
+    opacity: 0.7;
+}
+
+.separator {
+    width: 25%;
+    margin: 20px auto;
+    position: relative;
+}
+
+.about-me-container {
+    margin: 150px 0 100px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-gap: 50px;
+}
+
+.left-col,
+.right-col {
+    position: relative;
+}
+
+.about-image {
+    border-radius: 10px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.25);
+}
+
+.about-text {
+    text-align: justify;
+    font-size: 1.2rem;
+    line-height: 35px;
+    margin-bottom: 40px;
+}
+
+.skills-container {
+    position: relative;
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+}
+
+.skills-card {
+    height: 200px;
+    border-radius: 10px;
+    border: 1px solid #464646;
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.skills {
+    text-transform: uppercase;
+    font-size: 2rem;
+    color: #464646;
+    line-height: 200px;
+}
+
+.skills-card:hover {
+    background: var(--bg);
+}
+
+.skills-card:hover .skills {
+    color: #fff;
+}
+
+.skills-card.large {
+    grid-column: 2 span;
+}
+
+/*-------- Proyectos -------*/
+.project,
+.study {
+    position: relative;
+    padding: 50px 10vw;
+}
+
+.filters {
+    width: fit-content;
+    display: block;
+    margin: 100px auto;
+}
+
+.filter-btn {
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    text-transform: capitalize;
+    margin: 0 5px 10px;
+    cursor: pointer;
+    background: #26C6DA;
+    color: #fff;
+}
+
+.filter-btn.active {
+    background: #9C27B0;
+}
+
+.project-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 20px;
+}
+
+.project-card {
+    position: relative;
+    cursor: pointer;
+    display: block;
+}
+
+.project-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.project-card .content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .5s;
+    text-transform: capitalize;
+    opacity: 0;
+}
+
+.project-name {
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.tags {
+    position: absolute;
+    bottom: 20px;
+    opacity: .6;
+    width: 90%;
+    color: #26C6DA;
+}
+
+.project-card:hover .content {
+    opacity: 1;
+}
+
+.project-card.hide {
+    display: none;
+}
+
+/*--------- Estudios --------*/
+
+
+/*--------- Footer --------*/
+.footer {
+    width: 100%;
+    height: 30px;
+    text-align: center;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #26C6DA;
+    line-height: 30px;
+}
