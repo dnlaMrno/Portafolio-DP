@@ -417,7 +417,11 @@ body {
     margin-bottom: 4%;
 }
 
-
+.box .loading {
+    font-size: 20px;
+    text-align: center;
+    margin-top: 8%;
+}
 
 .row .column .box {
     padding-left: 10%;
@@ -445,6 +449,10 @@ body {
 .year i {
     padding-right: 20px;
     color: #26C6DA;
+}
+
+.box li {
+    margin-top: 6%;
 }
 
 /*--------- Footer --------*/
@@ -622,6 +630,18 @@ body {
 
     .project-name {
         font-size: 3rem;
+    }
+
+    .column .title {
+        font-size: 25px;
+    }
+
+    .box .year {
+        font-size: 16px;
+    }
+
+    .box h3 {
+        font-size: 14px;
     }
 
 }

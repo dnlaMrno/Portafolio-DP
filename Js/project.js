@@ -31,7 +31,7 @@ let projects = [
 },
 {
     name:'404',
-    tags:'#Back-End', 
+    tags:'#all, #Back-End', 
     image: 'construccion.jpg',
     link: 'en Construccion',
 },
