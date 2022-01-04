@@ -412,6 +412,13 @@ body {
     text-align: justify;
 }
 
+.box ul li {
+    list-style-type: disc;
+    margin-bottom: 4%;
+}
+
+
+
 .row .column .box {
     padding-left: 10%;
     padding-bottom: 8%;
@@ -546,6 +553,7 @@ body {
 
     .about-me-container {
         grid-template-columns: 1fr;
+        margin-top: 15%;
     }
 
     .about-image {
