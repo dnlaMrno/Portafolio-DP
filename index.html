@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,181 +12,184 @@
     <link rel="stylesheet" href="Css/style.css">
     <title>portafolio digital</title>
 </head>
+
 <body>
     <!----------- Menú ------------>
-<header>
-    <nav class="navBar">
-        <p class="brand"><i class="fa fa-power-off"></i> DP</p>
-        <div class="toggle-btn">
-            <span></span>
-            <span></span>
-        </div>
+    <header>
+        <nav class="navBar">
+            <p class="brand"><i class="fa fa-power-off"></i> DP</p>
+            <div class="toggle-btn">
+                <span></span>
+                <span></span>
+            </div>
             <ul class="links-container">
                 <li class="links-item"> <a href="#" class="link active">inicio</a></li>
                 <li class="links-item"> <a href="#about-section" class="link">acerca de mí</a></li>
                 <li class="links-item"> <a href="#project-section" class="link">proyectos</a></li>
                 <li class="links-item"> <a href="#study-section" class="link">Estudios</a></li>
             </ul>
-    </nav>
+        </nav>
 
-    <!---------- Inicio --------->
-    <section class="home">
-        <div class="hero-content">
-            <div class="typewriter-effect">
-                <div class="text" id="typewriter-text"></div>
-            </div>
-            <p class="profession">developer in progress</p>
-            <p class="info">“Hola, soy una programadora en potencia Trainee, amante de la tecnología,
-                te invito a que sigas viendo mi portafolio y me sigas en LinkedIn”.</p>
+        <!---------- Inicio --------->
+        <section class="home">
+            <div class="hero-content">
+                <div class="typewriter-effect">
+                    <div class="text" id="typewriter-text"></div>
+                </div>
+                <p class="profession">developer in progress</p>
+                <p class="info">“Hola, soy una programadora en potencia Trainee, amante de la tecnología,
+                    te invito a que sigas viendo mi portafolio y me sigas en LinkedIn”.</p>
                 <a href="https://www.linkedin.com/in/porras-daniela/" target="_blank" class="btn">linkedIn</a>
+            </div>
+            <img src="Assets/—Pngtree—triangle neon color glowing _4072770.png" class="image"
+                alt="triangulo de colores">
+        </section>
+    </header>
+
+    <!----------- Acerca de mi ----------->
+    <section class="about" id="about-section">
+        <h2 class="heading">Acerca <span class="highLight">de Mí</span></h2>
+        <p class="sub-heading">"Si puedes soñarlo, puedes hacerlo".</p>
+        <div class="separator"></div>
+
+        <div class="about-me-container">
+            <div class="left-col">
+                <img src="Assets/foto portafolio.jpg" class="about-image" alt="perfil" width="80%" height="100%">
+            </div>
+            <div class="right-col">
+                <p class="about-text">Me llamo Daniela Porras, tengo 31 años de edad; inicié esta hermosa
+                    carrera en el 2020 sin tener ningún conocimiento previo sobre desarrollo web, pero a
+                    medida que fuí aprendiendo y capacitándome, pude ir descubriendo un mundo nuevo donde
+                    lo imposible es posible. Actualmente estudio para certificarme como desarrolladora Full
+                    Stack, si bien ya finalicé la primera parte que corresponde a Front-End. Me caracterizo
+                    por tener interés y ganas de ir adquiriendo conocimiento constantemente, ya sea nuevos
+                    lenguajes, frameworks y metodologías de trabajo ágil, que permita una entrega óptima y
+                    eficaz del proyecto.
+                </p>
+                <a href="Download/DANIELA MORENO.pdf" target="_blank" class="btn">descargar cv</a>
+            </div>
         </div>
-<img src="Assets/—Pngtree—triangle neon color glowing _4072770.png" class="image" alt="triangulo de colores">
+
+        <h2 class="heading">Ski<span class="highLight">lls</span></h2>
+        <p class="sub-heading">lenguajes y framework que manejo.</p>
+        <div class="separator"></div>
+        <div class="skills-container">
+            <div class="skills-card" style="--bg: #f06529">
+                <p class="skills">html</p>
+            </div>
+            <div class="skills-card" style="--bg: #379ad6">
+                <p class="skills">css</p>
+            </div>
+            <div class="skills-card" style="--bg: #cc6699">
+                <p class="skills">scss</p>
+            </div>
+            <div class="skills-card" style="--bg: #f7df1e">
+                <p class="skills">javascript</p>
+            </div>
+            <div class="skills-card large" style="--bg: #0000FF ">
+                <p class="skills">reactjs</p>
+            </div>
+            <div class="skills-card large" style="--bg: #83cd29">
+                <p class="skills">nodejs</p>
+            </div>
+            <div class="skills-card" style="--bg: #006666">
+                <p class="skills">mysql</p>
+            </div>
+            <div class="skills-card" style="--bg: #F39C12">
+                <p class="skills">python</p>
+            </div>
+            <div class="skills-card large" style="--bg: #9C27B0">
+                <p class="skills">github</p>
+            </div>
+        </div>
     </section>
-</header>
 
-<!----------- Acerca de mi ----------->
-<section class="about" id="about-section">
-    <h2 class="heading">Acerca <span class="highLight">de Mí</span></h2>
-    <p class="sub-heading">"Si puedes soñarlo, puedes hacerlo".</p>
-    <div class="separator"></div>
+    <!------------ Proyectos ------------->
+    <section class="project" id="project-section">
+        <h2 class="heading">Proy<span class="highLight">ectos</span></h2>
+        <p class="sub-heading">Ejecutados a medida que iba capacitándome
+            en los cursos como también de manera autodidacta.</p>
+        <div class="separator"></div>
 
-    <div class="about-me-container">
-        <div class="left-col">
-            <img src="Assets/foto portafolio.jpg" class="about-image" alt="perfil" width="80%" height="100%">
+        <div class="filters">
+            <button class="filter-btn active" id="all">all</button>
+            <button class="filter-btn" id="html-css">html-css</button>
+            <button class="filter-btn" id="javaScript">javaScript</button>
+            <button class="filter-btn" id="react.Js">react.Js</button>
+            <button class="filter-btn" id="Back-End">back-End</button>
         </div>
-    <div class="right-col">
-        <p class="about-text">Me llamo Daniela Porras, tengo 31 años de edad; inicié esta hermosa 
-            carrera en el 2020 sin tener ningún conocimiento previo sobre desarrollo web, pero a 
-            medida que fuí aprendiendo y capacitándome, pude ir descubriendo un mundo nuevo donde 
-            lo imposible es posible. Actualmente estudio para certificarme como desarrolladora Full 
-            Stack, si bien ya finalicé la primera parte que corresponde a Front-End. Me caracterizo 
-            por tener interés y ganas de ir adquiriendo conocimiento constantemente, ya sea nuevos 
-            lenguajes, frameworks y metodologías de trabajo ágil, que permita una entrega óptima y 
-            eficaz del proyecto.
-            </p> 
-            <a href="Download/DANIELA PORRAS.pdf" target="_blank" class="btn">descargar cv</a>
-    </div>
-    </div>
+        <div class="project-container"></div>
+    </section>
 
-    <h2 class="heading">Ski<span class="highLight">lls</span></h2>
-    <p class="sub-heading">lenguajes y framework que manejo.</p>
-    <div class="separator"></div>
-    <div class="skills-container">
-        <div class="skills-card" style="--bg: #f06529">
-            <p class="skills">html</p>
+    <!----------- Estudios ----------->
+    <section class="study" id="study-section">
+        <h2 class="heading">Estudios y <span class="highLight"> Experiencia</span></h2>
+        <div class="separator"></div>
+
+        <div class="row">
+
+            <div class="column">
+                <h2 class="title">estudios</h2>
+                <div class="box">
+                    <div class="year"><i class="fa fa-calendar"></i>10/2020 - 07/2021</div>
+                    <h3>coderhouse - front-end</h3>
+                    <ul>
+                        <li>Desarrollo Web (HTML / CSS / Bootstrap / Scss)</li>
+                        <li>javaScript / Node.Js</li>
+                        <li>React.js</li>
+                    </ul>
+
+                </div>
+                <div class="box">
+                    <div class="year"><i class="fa fa-calendar"></i>08/2021 - 12/2021</div>
+                    <h3>codo a codo - full stack python</h3>
+                    <ul>
+                        <li>Desarrollo Web (HTML / CSS / JavaScript)</li>
+                        <li>Django</li>
+                        <li>MySQL</li>
+                    </ul>
+                </div>
+                <div class="box">
+                    <div class="year"><i class="fa fa-calendar"></i>12/2021 (En curso)</div>
+                    <h3>coder house - back-end</h3>
+                    <p class="loading"><i class="fa fa-spinner"></i> Cargando...</p>
+                </div>
+                <div class="box">
+                    <div class="year"><i class="fa fa-calendar"></i>2022 (En curso)</div>
+                    <h3>codo a codo - full stack React-GO</h3>
+                    <p class="loading"><i class="fa fa-spinner"></i> Cargando...</p>
+                </div>
+            </div>
+
+            <div class="column">
+                <h2 class="title">experiencia Laboral</h2>
+                <div class="box">
+                    <div class="year"><i class="fa fa-calendar"></i>08/2016 - (Presente)</div>
+                    <h3>roller service s.a</h3>
+                    <ul>
+                        <li>Recepción telefónica y atención directa con clientes Nacionales e Internacionales.</li>
+                        <li>Facturación de la mercadería y control de Stock.</li>
+                        <li>Auxiliar en tareas Administrativas y Comercio Exterior.</li>
+                        <li>Envío y Control de Email a los diferentes proveedores y clientes.</li>
+                        <li>Mantenimiento de archivo.</li>
+                    </ul>
+                </div>
+            </div>
         </div>
-        <div class="skills-card" style="--bg: #379ad6">
-            <p class="skills">css</p>
-        </div>
-        <div class="skills-card" style="--bg: #cc6699">
-            <p class="skills">scss</p>
-        </div>
-        <div class="skills-card" style="--bg: #f7df1e">
-            <p class="skills">javascript</p>
-        </div>
-        <div class="skills-card large" style="--bg: #0000FF ">
-            <p class="skills">reactjs</p>
-        </div>
-        <div class="skills-card large" style="--bg: #83cd29">
-            <p class="skills">nodejs</p>
-        </div>
-        <div class="skills-card" style="--bg: #006666">
-            <p class="skills">mysql</p>
-        </div>
-        <div class="skills-card" style="--bg: #F39C12">
-            <p class="skills">python</p>
-        </div>
-        <div class="skills-card large" style="--bg: #9C27B0">
-            <p class="skills">github</p>
-        </div>
-    </div>
-</section>
 
-<!------------ Proyectos ------------->
-<section class="project" id="project-section">
-    <h2 class="heading">Proy<span class="highLight">ectos</span></h2>
-    <p class="sub-heading">Ejecutados a medida que iba capacitándome
-        en los cursos como también de manera autodidacta.</p>
-    <div class="separator"></div>
-
-    <div class="filters">
-        <button class="filter-btn active" id="all">all</button>
-        <button class="filter-btn" id="html-css">html-css</button>
-        <button class="filter-btn" id="javaScript">javaScript</button>
-        <button class="filter-btn" id="react.Js">react.Js</button>
-        <button class="filter-btn" id="Back-End">back-End</button>
-    </div>
-    <div class="project-container"></div>
-</section>
-
-<!----------- Estudios ----------->
-<section class="study" id="study-section">
-    <h2 class="heading">Estudios y <span class="highLight"> Experiencia</span></h2>
-    <div class="separator"></div>
-
-<div class="row">
-
-    <div class="column">
-        <h2 class="title">estudios</h2>
-    <div class="box">
-        <div class="year"><i class="fa fa-calendar"></i>10/2020 - 07/2021</div>
-        <h3>coderhouse - front-end</h3>
-        <ul>
-            <li>Desarrollo Web (HTML / CSS / Bootstrap / Scss)</li>
-            <li>javaScript / Node.Js</li>
-            <li>React.js</li>
-        </ul>
-        
-    </div>
-    <div class="box">
-        <div class="year"><i class="fa fa-calendar"></i>08/2021 - 12/2021</div>
-        <h3>codo a codo - full stack python</h3>
-        <ul>
-            <li>Desarrollo Web (HTML / CSS / JavaScript)</li>
-            <li>Django</li>
-            <li>MySQL</li>
-        </ul>
-    </div>
-    <div class="box">
-        <div class="year"><i class="fa fa-calendar"></i>12/2021 (En curso)</div>
-        <h3>coder house - back-end</h3>
-        <p class="loading"><i class="fa fa-spinner"></i> Cargando...</p>
-    </div>
-    <div class="box">
-        <div class="year"><i class="fa fa-calendar"></i>2002 - 2007</div>
-        <h3>u.e francisco jose rojas</h3>
-        <p>Bachiller en Ciencias</p>
-    </div>
-    </div>
-
-    <div class="column">
-        <h2 class="title">experiencia Laboral</h2>
-    <div class="box">
-        <div class="year"><i class="fa fa-calendar"></i>08/2016 - (Presente)</div>
-        <h3>roller service s.a</h3>
-        <ul>
-            <li>Recepción telefónica y atención directa con clientes Nacionales e Internacionales.</li>
-            <li>Facturación de la mercadería y control de Stock.</li>
-            <li>Auxiliar en tareas Administrativas y Comercio Exterior.</li>
-            <li>Envío y Control de Email a los diferentes proveedores y clientes.</li>
-            <li>Mantenimiento de archivo.</li>
-        </ul>
-    </div>
-    </div>
-</div>
-
-</section>
+    </section>
 
 
 
 
-<!----------- Footer ----------->
-<footer>
-    <p class="footer">Copyrigth ©2022 Portafolio digital - Daniela Porras - derechos reservados</p>
-</footer>
+    <!----------- Footer ----------->
+    <footer>
+        <p class="footer">Copyrigth ©2022 Portafolio digital - Daniela Porras - derechos reservados</p>
+    </footer>
 
-<!----------- JavaScript ----------->
-<script src="Js/project.js"></script>
-<script src="Js/app.js"></script>
+    <!----------- JavaScript ----------->
+    <script src="Js/project.js"></script>
+    <script src="Js/app.js"></script>
 </body>
+
 </html>
